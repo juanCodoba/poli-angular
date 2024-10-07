@@ -34,7 +34,7 @@ jobs:
       - run: npm run build:prod
 
       # mv index html
-      - run: mv dist/poli-angular/browser/index.html dist/poli-angular/404.html
+      - run: mv dist/poli-angular/browser/index.html dist/poli-angular/browser/404.html
 
       # deploy guthubpages
       - name: GitHub Pages
