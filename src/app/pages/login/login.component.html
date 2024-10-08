@@ -23,7 +23,7 @@
                                 <input type="password" class="form-control" id="password" name="password" required>
                             </div>
                             <a href="/forgot-password">Olvidé mi contraseña</a><br><br>
-                            <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button><br><br>
+                            <button type="submit" (click)="navigateTo('/dashboard')" class="btn btn-primary btn-block">Iniciar sesión</button><br><br>
                         </form>
                         <button (click)="navigateTo('/register')" class="btn btn-secondary btn-block">Registrarse</button>
                     </div>
