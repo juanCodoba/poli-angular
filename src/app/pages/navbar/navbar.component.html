@@ -1,12 +1,29 @@
-<!-- navbar.component.html -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">MiDashboard</a>
-    <div class="collapse navbar-collapse justify-content-end">
-        <div class="navbar-nav">
-            <div class="nav-item user-info d-flex align-items-center">
-                <img src="profile-pic.jpg" alt="Foto de perfil" class="profile-pic rounded-circle">
-                <span class="user-name ml-2">Nombre del Usuario</span>
-            </div>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Empresa XYZ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/nosotros">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/servicios">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contacto">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-primary" (click)="navigateTo('/login')">Login</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-secondary ml-2" (click)="navigateTo('/register')">Register</button>
+        </li>
+      </ul>
     </div>
-</nav>
+  </nav>
+  
